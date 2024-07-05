@@ -12,15 +12,47 @@
         height: 100%; 
         background-color: #f8f8f8; 
         padding: 20px; 
-        box-sizing: border-box;
+        box-sizing: border-box;   
+        z-index: 1;     
     }
 
-    .menu {
+    .sidebar-content {
         background-color: #ffffff; 
         padding: 15px; 
         border-radius: 5px; 
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     }
+    
+    .product-tile {
+        position: relative; 
+        width: 300px; 
+        margin: 20px auto; 
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    .product-image {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .product-info {
+        padding: 15px; 
+    }
+
+    .product-name {
+        font-size: 18px; 
+        color: #333; 
+        margin-bottom: 10px; 
+    }
+
+    .product-price {
+        font-size: 16px;
+        color: #888; 
+    }
+
     </style>
 </head>
 <body>
@@ -36,14 +68,21 @@
         </ul>
     </div >
 
-    <div class="sidebar"><p class="menu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, fuga. Rem Velit in ullam vel beatae pariatur, dolore at labore, iusto error, id veniam esse sint recusandae nobis.</p></div>
+    <div class="sidebar">
+        <img src="" >
+        <p class="sidebar-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, fuga. Rem Velit in ullam vel beatae pariatur, dolore at labore, iusto error, id veniam esse sint recusandae nobis.</p>
+    </div>
+    
+    <div class="product-tile">
+        <img src="IMAGE_URL" alt="Product Name" class="product-image">
+        <div class="product-info">
+            <div class="product-name">Product Name</div>
+            <div class="product-price">$19.99</div>
+        </div>
+    </div>
 
-
-
-
-      
-      <!-- Footer -->
-       <div class="footer">
+    <!-- Footer -->
+     <div class="footer">
         <p>&copy; 2024 Dokan. All rights reserved.</p>
     </div>   
     </body>
