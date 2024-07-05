@@ -10,19 +10,30 @@
         position: fixed; 
         width: 250px; 
         height: 100%; 
-        background-color: #f8f8f8; 
         padding: 20px; 
         box-sizing: border-box;   
-        z-index: 1;     
+        z-index: 2;     
+    }
+
+    .sidebar img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px; 
+        height: 100%; 
+        z-index: 1; 
+        opacity: 0.5; 
     }
 
     .sidebar-content {
-        background-color: #ffffff; 
-        padding: 15px; 
-        border-radius: 5px; 
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        position: relative; 
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 3; 
     }
-    
+  
     .products-container {
         display: flex;
         justify-content: center;
@@ -31,7 +42,7 @@
     }
 
     .product-tile {
-        background-color: skyblue;
+        background-color: rgb(121, 201, 230);
         position: relative; 
         width: calc(25% - 40px);
         margin: 20px auto; 
@@ -77,8 +88,18 @@
     </div >
 
     <div class="sidebar">
-        <img src="" >
-        <p class="sidebar-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, fuga. Rem Velit in ullam vel beatae pariatur, dolore at labore, iusto error, id veniam esse sint recusandae nobis.</p>
+        <img src="download5.avif" >
+        <h2>Categories</h2>
+        <p>Select a category:</p>
+        <select id="categorySelect">
+            <option value="laptops">Laptops</option>
+            <option value="phones">Phones</option>
+            <option value="accessories">Accessories</option>
+        </select>
+        <h2>Price Filter</h2>
+        <p>Set your price range:</p>
+        <input type="range" min="0" max="1000" value="500" id="priceRange" oninput="priceOutput.value = priceRange.value">
+        <output id="priceOutput">500</output>
     </div>
     
     <div class="products-container">
@@ -97,7 +118,7 @@
             </div>
         </div>
         <div class="product-tile">
-            <img src="download.jpg" alt="Product Name" class="product-image">
+            <img src="download4.jpg" alt="Product Name" class="product-image">
             <div class="product-info">
                 <p class="product-name">Acer Nitro 5 AN515-58-59JP Core i5 12th Gen RTX 3050 4GB Graphics 15.6" FHD 144Hz Gaming Laptop</p>
                 <p class="product-price">$505.66</p>
