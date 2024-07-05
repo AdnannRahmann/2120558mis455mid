@@ -9,20 +9,35 @@
     max-width: 100%;
 }/*for container inhead*/
 
+h1 {
+    font-family: 'Arial', sans-serif; 
+}
+
 .nav {
     display: flex;
-    justify-content: center;
-    list-style-type: none;
+    justify-content: center; 
     margin: 0;
     padding: 0;
-
+    list-style-type: none; 
 }/*list element in row form*/
-
+  
 .nav li {
-    padding: 0 20px;
+    margin: 0 10px;
+    color: white;
 }/*list space*/
+  
+.nav a {
+    display: inline-block; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
 
-.nav li:hover {
+.nav a:hover {
     background-color: #00b0ff; 
     color: #ffffff; 
 }/*hover effect*/
