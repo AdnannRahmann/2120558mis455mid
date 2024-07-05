@@ -1,0 +1,25 @@
+.header {
+    background-color: #f8f8f8;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}/*for container inhead*/
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}/*list element in row form*/
+
+.nav li {
+    padding: 0 20px;
+}/*list space*/
+
+
+
+
+
+
