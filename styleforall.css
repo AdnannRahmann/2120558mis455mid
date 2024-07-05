@@ -4,6 +4,8 @@
     text-align: center;
     font-size: 18px;
     color: #333;
+    background-image: linear-gradient(#ffa500, #ff7f50, #ff4500);
+    border: 1px solid #d35400;
 }/*for container inhead*/
 
 .nav {
@@ -12,11 +14,23 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
+  
 }/*list element in row form*/
 
 .nav li {
     padding: 0 20px;
 }/*list space*/
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}/*footer*/
 
 
 
