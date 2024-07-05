@@ -23,9 +23,15 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     }
     
+    .products-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .product-tile {
         position: relative; 
-        width: 300px; 
+        width: calc(20% - 40px);
         margin: 20px auto; 
         border: 1px solid #ddd;
         border-radius: 5px;
@@ -73,11 +79,27 @@
         <p class="sidebar-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, fuga. Rem Velit in ullam vel beatae pariatur, dolore at labore, iusto error, id veniam esse sint recusandae nobis.</p>
     </div>
     
-    <div class="product-tile">
-        <img src="IMAGE_URL" alt="Product Name" class="product-image">
-        <div class="product-info">
-            <div class="product-name">Product Name</div>
-            <div class="product-price">$19.99</div>
+    <div class="products-container">
+        <div class="product-tile">
+            <img src="download.jpg" alt="Product Name" class="product-image">
+            <div class="product-info">
+                <p class="product-name">Asus P1511CMA Intel Celeron N4020 15.6-Inch HD Laptop</p>
+                <p class="product-price">$415.56</p>
+            </div>
+        </div>
+        <div class="product-tile">
+            <img src="download.jpg" alt="Product Name" class="product-image">
+            <div class="product-info">
+                <p class="product-name">Asus P1511CMA Intel Celeron N4020 15.6-Inch HD Laptop</p>
+                <p class="product-price">$415.56</p>
+            </div>
+        </div>
+        <div class="product-tile">
+            <img src="download.jpg" alt="Product Name" class="product-image">
+            <div class="product-info">
+                <p class="product-name">Asus P1511CMA Intel Celeron N4020 15.6-Inch HD Laptop</p>
+                <p class="product-price">$415.56</p>
+            </div>
         </div>
     </div>
 
